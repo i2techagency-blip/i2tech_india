@@ -1,0 +1,65 @@
+/* Homepage SEO, trust and rendering refinements — July 2026 */
+.wsc-trust-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.wsc-trust-link:hover,
+.wsc-trust-link:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wsc-trust-profile {
+  min-height: 134px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.wsc-trust-profile img {
+  width: 173px;
+  height: 85px;
+  object-fit: contain;
+}
+
+.wsc-trust-profile strong {
+  display: block;
+  margin-top: 8px;
+  color: #242b34;
+  font-size: 16px;
+}
+
+@supports (content-visibility: auto) {
+  .crafting_bg,
+  .intro_bg,
+  .searched_terms {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 900px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+@media (max-width: 480px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .home_banner .bb-title-container.hero-content {
+    padding-top: 118px !important;
+  }
+}

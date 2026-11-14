@@ -1,0 +1,2515 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+    <meta charset="utf-8">
+
+    <!--<link rel="preload" href="fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/libre-baskerville.woff2" as="font" type="font/woff2" crossorigin>-->
+
+
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1030;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #FFFFFF;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            padding: 0;
+        }
+
+        .navbar-brand {
+            position: relative;
+            z-index: 9999;
+            padding: 0;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin-bottom: 0;
+        }
+
+        .nav-item {
+            margin-left: 30px;
+        }
+
+        .nav-link {
+            padding: 0;
+            color: #272727;
+            font-size: 16px;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-toggler {
+                display: block;
+                padding: .25rem .75rem;
+                border-color: rgba(0, 0, 0, .1);
+            }
+
+            .navbar-nav {
+                margin-left: 0;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .nav-item {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            .nav-link {
+                padding: 5px 0;
+            }
+
+            .navbar-collapse:not(.show) {
+                display: none !important;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .header {
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+        }
+
+        .home_banner h1 {
+            font-size: 56px;
+            line-height: 1.2;
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            src: url('https://www.websolutioncentre.com/fonts/Poppins-Medium.woff2') format('woff2');
+            font-display: swap;
+            font-weight: 500;
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            src: url('https://www.websolutioncentre.com/fonts/Poppins-Regular.woff2') format('woff2');
+            font-display: swap;
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: 'Libre Baskerville';
+            src: url('https://www.websolutioncentre.com/fonts/libre-baskerville.woff2') format('woff2');
+            font-display: swap;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+
+
+    <!-- Serve the same scripts, structured data and media to every browser. -->
+
+
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' media="print" onload="this.media='all'" />
+    <link href="css/style.css@v=20260726-header5.css" rel='stylesheet' type='text/css' />
+    <!--<link href="css/home.css" rel='stylesheet' type='text/css' />-->
+    <link href="css/responsive.css@v=20260726-header8.css" rel='stylesheet' type='text/css' />
+    <link href="css/home-2026.css@v=20260726-responsive3.css" rel="stylesheet" type="text/css" />
+    <title>Website Designing Company in Delhi, Website Design Delhi - WS Centre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Website designing company in Delhi since 2008. Explore our business and ecommerce website portfolio, understand the process and request a scoped design quote." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow" />
+    <meta name="author" content="Web Solution Centre" />
+    <meta name="language" content="en-IN" />
+    <meta name="geo.region" content="IN-DL" />
+    <meta name="geo.placename" content="New Delhi" />
+    <meta name="ICBM" content="28.635541, 77.108678" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="icon" href="images/favicon.png">
+   
+
+    <!-- Open Graph / social sharing -->
+    
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Homepage-only additions; shared navigation and layout styles are unchanged. */
+        .wsc-home-proof {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 134px;
+            padding: 16px;
+            gap: 8px;
+            text-align: center;
+            color: #20252d;
+        }
+
+        .wsc-home-proof strong {
+            font-size: 27px;
+            line-height: 1.25;
+        }
+
+        .wsc-home-proof small {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .wsc-home-proof .wsc-proof-stars {
+            color: #b66b00;
+            letter-spacing: 3px;
+            font-size: 23px;
+        }
+
+        .wsc-home-proof .wsc-proof-facebook {
+            color: #1877f2;
+        }
+
+        .wsc-home-project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 26px;
+        }
+
+        .wsc-home-project {
+            border: 1px solid #dedee5;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #fff;
+            color: #20252d;
+        }
+
+        .wsc-home-project img {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+        }
+
+        .wsc-home-project-copy {
+            padding: 24px;
+        }
+
+        .wsc-home-project-copy h3 {
+            font-size: 23px;
+            line-height: 1.3;
+            margin: 8px 0 14px;
+            color: #20252d;
+        }
+
+        .wsc-home-project-copy p {
+            font-size: 16px;
+            line-height: 1.75;
+            margin: 0 0 18px;
+            color: #49505c;
+        }
+
+        .wsc-home-project-type {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #8d268c;
+        }
+
+        .wsc-home-project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 20px;
+        }
+
+        .wsc-home-project a:focus-visible,
+        .wsc-home-budget a:focus-visible {
+            outline: 3px solid #a526a5;
+            outline-offset: 4px;
+        }
+
+        .wsc-home-project-links a {
+            display: inline-flex;
+            align-items: center;
+            min-height: 44px;
+            color: #8d268c;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .wsc-home-budget {
+            padding: 70px 0;
+            background: #efeff3;
+            color: #252a33;
+        }
+
+        .wsc-home-budget .heading_main {
+            margin-bottom: 30px;
+        }
+
+        .wsc-home-budget .heading_main p {
+            max-width: 780px;
+            margin: 18px auto 0;
+            line-height: 1.75;
+        }
+
+        .wsc-home-budget-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .wsc-home-budget-card {
+            background: #fff;
+            border: 1px solid #e2e2e8;
+            border-radius: 12px;
+            padding: 26px;
+        }
+
+        .wsc-home-budget-card h3 {
+            font-size: 22px;
+            line-height: 1.35;
+            margin: 0 0 15px;
+            color: #252a33;
+        }
+
+        .wsc-home-budget-card p,
+        .wsc-home-budget-card li {
+            font-size: 16px;
+            line-height: 1.75;
+            color: #49505c;
+        }
+
+        .wsc-home-budget-card ul {
+            padding-left: 22px;
+            margin: 0;
+        }
+
+        .wsc-home-budget-card li+li {
+            margin-top: 9px;
+        }
+
+        .wsc-home-budget-note {
+            max-width: 820px;
+            margin: 26px auto 0;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.75;
+        }
+
+        .wsc-home-budget-note a {
+            color: #8d268c;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        @media(max-width:991px) {
+            .wsc-home-project-grid {
+                grid-template-columns: 1fr;
+                max-width: 680px;
+                margin: auto;
+            }
+        }
+
+        @media(max-width:600px) {
+            .wsc-home-budget-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .wsc-home-budget {
+                padding: 45px 0;
+            }
+
+            .wsc-home-budget-card,
+            .wsc-home-project-copy {
+                padding: 21px;
+            }
+        }
+    </style>
+
+    <meta name="google-site-verification" content="-b1BNOaKi3yxqk6vEVFa1RNx1tInGUoyGue0Z9qyDo4" />
+    <!-- Primary structured data: one clean graph for Google Search and AI features -->
+    
+
+    <!-- WSC home videos styles: start -->
+    <style>
+        #wsc-home-videos {
+            padding: 75px 0;
+            background: #f7f7f7;
+            color: #222
+        }
+
+        #wsc-home-videos .heading_main {
+            margin-bottom: 32px;
+            text-align: center
+        }
+
+        #wsc-home-videos .wsc-hv-eyebrow {
+            display: block;
+            margin-bottom: 10px;
+            color: #a8189b;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase
+        }
+
+        #wsc-home-videos .heading {
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        #wsc-home-videos .wsc-hv-intro {
+            max-width: 760px;
+            margin: 16px auto 0
+        }
+
+        #wsc-home-videos .wsc-hv-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 26px
+        }
+
+        #wsc-home-videos .wsc-hv-card {
+            min-width: 0;
+            background: #fff;
+            border: 1px solid #e9e6eb;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(20, 10, 30, .04)
+        }
+
+        #wsc-home-videos .wsc-hv-media {
+            position: relative;
+            aspect-ratio: 16/9;
+            background: #101018;
+            overflow: hidden
+        }
+
+        #wsc-home-videos .wsc-hv-play {
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #fff
+        }
+
+        #wsc-home-videos .wsc-hv-media img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        #wsc-home-videos .wsc-hv-icon {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: linear-gradient(107deg, #8300ae, #d11450, #ee2e24);
+            box-shadow: 0 3px 14px rgba(0, 0, 0, .25);
+            pointer-events: none
+        }
+
+        #wsc-home-videos .wsc-hv-icon:after {
+            content: '';
+            display: block;
+            border-top: 9px solid transparent;
+            border-bottom: 9px solid transparent;
+            border-left: 14px solid #fff;
+            margin-left: 4px
+        }
+
+        #wsc-home-videos .wsc-hv-play:hover .wsc-hv-icon {
+            background: #a8189b
+        }
+
+        #wsc-home-videos a:focus-visible {
+            outline: 3px solid #a8189b;
+            outline-offset: 4px
+        }
+
+        #wsc-home-videos .wsc-hv-play:focus-visible {
+            outline-offset: -4px
+        }
+
+        #wsc-home-videos iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 0
+        }
+
+        #wsc-home-videos .wsc-hv-copy {
+            padding: 20px
+        }
+
+        #wsc-home-videos .wsc-hv-category {
+            display: block;
+            margin-bottom: 9px;
+            color: #666;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase
+        }
+
+        #wsc-home-videos h3 {
+            margin: 0 0 10px;
+            font-size: 19px;
+            line-height: 1.4;
+            font-weight: 700
+        }
+
+        #wsc-home-videos h3 a {
+            color: #222;
+            text-decoration: none
+        }
+
+        #wsc-home-videos h3 a:hover {
+            color: #a8189b
+        }
+
+        #wsc-home-videos .wsc-hv-copy p {
+            margin: 0;
+            color: #606060;
+            font-size: 15px;
+            line-height: 1.65
+        }
+
+        #wsc-home-videos .wsc-hv-action {
+            text-align: center;
+            margin-top: 32px
+        }
+
+        @media(max-width:991px) {
+            #wsc-home-videos .wsc-hv-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr))
+            }
+        }
+
+        @media(max-width:575px) {
+            #wsc-home-videos {
+                padding: 50px 0
+            }
+
+            #wsc-home-videos .wsc-hv-grid {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 22px
+            }
+
+            #wsc-home-videos h3 {
+                font-size: 18px
+            }
+        }
+    </style>
+    <!-- WSC home videos styles: end -->
+</head>
+
+<body class="no-touch">
+
+    <!--header-->
+    <div class="hidden_header"></div>
+    <div id="header-container"></div>
+    
+
+    <!--End header-->
+    <main id="main-content">
+
+
+
+        <!--banner-->
+
+        <div class="home_banner hero">
+
+            <div class="banner-container">
+
+
+
+                <div class="banner-backgrounds">
+
+                    <div class="gradient_left_main">
+                        <div class="gradient_left">
+                            <div class="gradient_blur gra_red"></div>
+                            <div class="gradient_blur gra_blue"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="bb-title-container hero-content speakable-section">
+
+                        <h1 class="bb-title speakable-heading">Website Designing <br>Company in Delhi <br>Since 2008
+                        </h1>
+
+                        <div class="bb-link"> <a href="contact-us/index.html" class="green-arrow-link-animation"
+                                title="Contact Best Website Designing Company in Delhi"> <span>Work With Us</span> </a>
+                        </div>
+                    </div>
+
+                    <div class="banner-bg-container">
+
+                        <div class="swiper-container gallery-top js-gallery-top swiper-container-horizontal">
+
+                            <div class="swiper-wrapper">
+
+                                <!--<div class="swiper-slide swiper-lazy swiper-slide-active" data-background="images/website-design-banner.jpg"></div>
+
+<div class="swiper-slide swiper-lazy" data-background="images/ecommerce-development-banner.jpg"></div>
+
+<div class="swiper-slide swiper-lazy" data-background="images/search-engine-optimization-banner.jpg"></div>
+
+<div class="swiper-slide swiper-lazy" data-background="images/mobile-app-development-banner.jpg"></div>-->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="banner-round-container">
+
+                        <div class="swiper-container js-gallery-thumbs swiper-container-horizontal">
+
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide swiper-slide-active">
+
+                                    <div class="brc-description">
+
+                                        <div class="descr">Custom, responsive and conversion-focused</div>
+
+                                        <strong class="brc-middle">WEBSITE DESIGNING <span></span></strong>
+
+                                        <div class="note">Distinctive business websites shaped around your brand,
+                                            audience and goals.</div>
+
+                                        <div class="brc-details-button"><a href="web-designing.html"
+                                                title="Website Designing"
+                                                class="green-arrow-link-animation plus-link"><span>View More</span></a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide swiper-slide-next">
+
+                                    <div class="brc-description">
+
+                                        <div class="descr">Clear, credible and built for business</div>
+
+                                        <strong class="brc-middle">CORPORATE WEBSITE DESIGN <span></span></strong>
+
+                                        <div class="note">Professional websites that make complex services easy to
+                                            understand.</div>
+
+                                        <div class="brc-details-button"><a href="portfolio/index.html"
+                                                title="Corporate website design portfolio"
+                                                class="green-arrow-link-animation plus-link"><span>View Work</span></a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brc-description">
+
+                                        <div class="descr">Designed around real customer journeys</div>
+
+                                        <strong class="brc-middle">ECOMMERCE WEBSITE DESIGN <span></span></strong>
+
+                                        <div class="note">Product discovery, confident buying decisions and
+                                            friction-free mobile shopping.</div>
+
+                                        <div class="brc-details-button"><a
+                                                href="e-commerce-website-designing/index.html"
+                                                title="Ecommerce website design"
+                                                class="green-arrow-link-animation plus-link"><span>View More</span></a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-slide">
+
+                                    <div class="brc-description">
+
+                                        <div class="descr">Refresh what no longer represents you</div>
+
+                                        <strong class="brc-middle">WEBSITE REDESIGN <span></span></strong>
+
+                                        <div class="note">Sharper positioning, simpler navigation and a modern
+                                            responsive experience.</div>
+
+                                        <div class="brc-details-button"><a href="contact-us/index.html#project"
+                                                title="Discuss a website redesign"
+                                                class="green-arrow-link-animation plus-link"><span>Discuss
+                                                    Redesign</span></a></div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-button-prev swiper-button-disabled"><i class="fa fa-chevron-right"></i>
+                            </div>
+
+                            <div class="swiper-button-next"><i class="fa fa-chevron-right"></i></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination lazyload blur-up"></div>
+
+                </div>
+
+                <div class="banner-tabs-slider tsc-hidden">
+
+                    <div class="js-swiper-tabs"></div>
+
+                </div>
+
+                <div class="bc-anchor"><i class="fa fa-chevron-down"></i></div>
+
+            </div>
+
+        </div>
+
+        <!--end banner-->
+
+
+
+        <!--services-->
+
+        <section class="service_bg lazyload blur-up service-card">
+
+            <div class="container">
+
+                <div class="heading_main">
+
+                    <h2 class="heading" itemprop="name">Website Design Services for Delhi Businesses</h2>
+                    <div class="heading">A Website Designing Company Since 2008</div>
+                    Focused on clear strategy, original design, responsive experiences and stronger first impressions
+
+                </div>
+
+
+
+                <div class="row">
+
+                    <div class="col-xl-2">
+
+                        <div class="service_circle" title="Best Website Designing Company Delhi">
+
+                            <span class="rsl-circle-shadow"></span>
+
+                            <div class="icon"><img data-src="images/website-icon1.png" src="images/loading.gif"
+                                    alt="Website design service icon" class="img-fluid lazyload blur-up" width="60"
+                                    height="60"></div>
+
+                            <h3 class="green" itemprop="name">Website<br>Design</h3>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2">
+                        <div class="service_circle" title="Corporate website design in Delhi">
+                            <span class="rsl-circle-shadow"></span>
+                            <div class="icon"><img data-src="images/web-development-icon1.png" src="images/loading.gif"
+                                    alt="Corporate website design icon" class="img-fluid lazyload blur-up" width="60"
+                                    height="60"></div>
+                            <h3 class="orange" itemprop="name">Corporate<br>Websites</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2">
+                        <div class="service_circle" title="Ecommerce website design company in Delhi">
+                            <span class="rsl-circle-shadow"></span>
+                            <div class="icon"><img data-src="images/ecommerce-development-icon1.png"
+                                    src="images/loading.gif" alt="Ecommerce website design icon"
+                                    class="img-fluid lazyload blur-up" width="60" height="60"></div>
+                            <h3 class="purple" itemprop="name">Ecommerce<br>Design</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2">
+                        <div class="service_circle" title="Responsive website design in Delhi">
+                            <span class="rsl-circle-shadow"></span>
+                            <div class="icon"><img data-src="images/mobile-app-icon1.png" src="images/loading.gif"
+                                    alt="Responsive website design icon" class="img-fluid lazyload blur-up" width="60"
+                                    height="60"></div>
+                            <h3 class="brown" itemprop="name">Responsive<br>Design</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2">
+                        <div class="service_circle" title="Business website redesign in Delhi">
+                            <span class="rsl-circle-shadow"></span>
+                            <div class="icon"><img data-src="images/online-marketing-icon1.png" src="images/loading.gif"
+                                    alt="Website redesign service icon" class="img-fluid lazyload blur-up" width="60"
+                                    height="60"></div>
+                            <h3 class="blue" itemprop="name">Website<br>Redesign</h3>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--end services-->
+
+        <!--section-->
+        <section class="reviews_bg lazyload blur-up">
+            <div class="container">
+                <div class="heading_main">
+                    <h2 class="heading">Trusted Across Delhi and Beyond</h2>
+                    <p>Explore independent customer feedback and established company profiles.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <a class="wsc-trust-link"
+                            href="https://www.google.com/search?q=Web+Solution+Centre+Subhash+Nagar+Delhi+reviews"
+                            target="_blank" rel="nofollow noopener"
+                            aria-label="Read Web Solution Centre reviews on Google">
+                            <div class="out_review">
+                                <div class="total_review">Customer Reviews on Google</div>
+                                <div class="wsc-home-proof">
+                                    <strong>4.8 out of 5</strong>
+                                    <span class="wsc-proof-stars" aria-hidden="true">★★★★★</span>
+                                    <small>556 reviews · Checked 10 September 2026<br>Read the latest reviews on Google
+                                        &nearr;</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <a class="wsc-trust-link" href="https://www.facebook.com/websolutioncentre/reviews"
+                            target="_blank" rel="nofollow noopener" aria-label="View Web Solution Centre on Facebook">
+                            <div class="out_review">
+                                <div class="total_review">Feedback on Facebook</div>
+                                <div class="wsc-home-proof">
+                                    <strong class="wsc-proof-facebook">Facebook</strong>
+                                    <small>Explore customer feedback on our company page.<br>Visit our Facebook reviews
+                                        &nearr;</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <a class="wsc-trust-link" href="https://www.linkedin.com/company/web-solution-centre"
+                            target="_blank" rel="nofollow noopener"
+                            aria-label="View the Web Solution Centre LinkedIn company profile">
+                            <div class="out_review">
+                                <div class="total_review">Established Delhi Digital Agency</div>
+                                <div class="wsc-trust-profile">
+                                    <img data-src="images/i2Tech_digital_solutions_173x85.png" src="images/loading.gif"
+                                        alt="Web Solution Centre established in Delhi" class="lazyload blur-up"
+                                        width="173" height="85" loading="lazy" decoding="async"
+                                        style="background:#11151d;border-radius:10px;padding:12px 18px;box-sizing:border-box;">
+                                    <strong>Serving businesses since 2008</strong>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--end section-->
+
+        <!--our work-->
+
+
+        <section class="crafting_bg" aria-labelledby="wsc-delhi-heading">
+            <div class="container">
+                <div class="heading_main hero hero-content speakable-section">
+                    Designing for Delhi businesses since 2008
+                    <h2 id="wsc-delhi-heading" class="heading speakable-heading">Website Design Built Around Your Brand
+                        and Your Customers</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-11 col-lg-12 col-md-12 col-sm-12 crafting_text about-content speakable-section">
+                        <p>Web Solution Centre is a website designing company in Delhi, based in Subhash Nagar and
+                            serving businesses since 2008. We design business websites, corporate websites, ecommerce
+                            stores and website redesigns. Start with our <a href="portfolio/index.html">website design
+                                portfolio</a>, then tell us what customers need to understand or do on your website.
+                            That gives the design a useful starting point: your business, your audience and the next
+                            step you want visitors to take.</p>
+
+                        <h3>A Clear Website for the Way You Do Business</h3>
+                        <p>A manufacturer may need an organised product catalogue and a simple enquiry route. A
+                            professional firm needs clear services and evidence of its experience. A retailer needs
+                            product information that helps people choose. Our <a href="web-designing.html">custom
+                                website design service</a> brings the page structure, copy and visual direction together
+                            around those different needs.</p>
+
+                        <h3>Responsive Design That Respects the Small Screen</h3>
+                        <p>On a phone, visitors should be able to read your offer, open the menu, review your work and
+                            contact you without pinching the screen or hunting for a button. We plan readable text,
+                            comfortable tap targets and straightforward forms, then review key journeys across mobile,
+                            tablet and desktop layouts.</p>
+
+                        <h3>Make Your Work and Your Offer Easy to Evaluate</h3>
+                        <p>Good website design helps customers make a decision. Service explanations, relevant projects,
+                            genuine feedback and clear contact details give them something concrete to assess. For an <a
+                                href="e-commerce-website-designing/index.html">ecommerce website</a>, that also means
+                            useful category pages, readable product details and a considered path towards purchase.</p>
+
+                        <h3>A Delhi Team You Can Speak To</h3>
+                        <p>Our office is at 2/345 Subhash Nagar, New Delhi 110027. We work with businesses across Delhi
+                            NCR and beyond, with the scope, design reviews and support requirements discussed at the
+                            start. <a href="about-us/index.html">Meet Web Solution Centre</a> or <a
+                                href="contact-us/index.html#project">send your website brief</a>. If you already have a
+                            website, include its address and tell us what you want to improve.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--our work-->
+
+        <section class="projects-portfolio">
+
+            <div class="heading_main">
+
+                <div class="heading">Selected Client Work:</div>
+                <h2 class="heading">Website Design Projects Across Industries</h2>
+
+                <p>Three recent examples from our portfolio. Open a live website to explore it, or browse more work in
+                    the same industry.</p>
+
+            </div>
+            <div class="container">
+                <div class="wsc-home-project-grid">
+                    <article class="wsc-home-project">
+                        <a href="https://jivarofoods.com/" target="_blank" rel="nofollow noopener"
+                            aria-label="Explore the Jivaro Foods live website (opens in a new tab)">
+                            <img src="images/wsc-portfolio/jivaro.webp"
+                                alt="Jivaro Foods storefront with food photography and product navigation" width="1280"
+                                height="720" loading="lazy" decoding="async">
+                        </a>
+                        <div class="wsc-home-project-copy">
+                            <span class="wsc-home-project-type">Food &amp; Ecommerce</span>
+                            <h3>Jivaro Foods</h3>
+                            <p>A food brand storefront from our ecommerce portfolio. Explore how product imagery, brand
+                                presentation and shopping navigation work together, then browse other retail projects.
+                            </p>
+                            <div class="wsc-home-project-links"><a href="https://jivarofoods.com/" target="_blank"
+                                    rel="nofollow noopener">Visit live website &nearr;</a><a
+                                    href="portfolio/index.html#ecommerce-website-design-portfolio">More ecommerce work
+                                    &rarr;</a></div>
+                        </div>
+                    </article>
+                    <article class="wsc-home-project">
+                        <a href="https://durautopartsusa.com/" target="_blank" rel="nofollow noopener"
+                            aria-label="Explore the Durauto live website (opens in a new tab)">
+                            <img src="images/wsc-portfolio/durauto.webp"
+                                alt="Durauto truck and trailer parts website with product categories" width="1280"
+                                height="720" loading="lazy" decoding="async">
+                        </a>
+                        <div class="wsc-home-project-copy">
+                            <span class="wsc-home-project-type">Automobile &amp; Parts</span>
+                            <h3>Durauto</h3>
+                            <p>A truck and trailer parts website from our automobile portfolio. Review the product
+                                categories and business information to see an example of a catalogue-led website.</p>
+                            <div class="wsc-home-project-links"><a href="https://durautopartsusa.com/" target="_blank"
+                                    rel="nofollow noopener">Visit live website &nearr;</a><a
+                                    href="portfolio/index.html#automobiles">More automobile work &rarr;</a></div>
+                        </div>
+                    </article>
+                    <article class="wsc-home-project">
+                        <a href="https://bedrocknexa.com/" target="_blank" rel="nofollow noopener"
+                            aria-label="Explore the Bedrock Nexa live website (opens in a new tab)">
+                            <img src="in/public/assets/images/portfolios/wsc-bedrocknexa-20260922.webp"
+                                alt="Bedrock Nexa business website with blue and white design and digital services navigation"
+                                width="1200" height="684" loading="lazy" decoding="async">
+                        </a>
+                        <div class="wsc-home-project-copy">
+                            <span class="wsc-home-project-type">IT &amp; Service Industries</span>
+                            <h3>Bedrock Nexa</h3>
+                            <p>A digital services website with a clear visual identity and structured service
+                                navigation. Explore how Bedrock Nexa presents its expertise, platform and packages, or
+                                browse more business website projects.</p>
+                            <div class="wsc-home-project-links"><a href="https://bedrocknexa.com/" target="_blank"
+                                    rel="nofollow noopener">Visit live website &nearr;</a><a
+                                    href="portfolio/index.html#it-service-industries">More service industry work
+                                    &rarr;</a></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+
+            <div class="pp-load-more">
+
+                <p> Want to See More? <a href="portfolio/index.html" class="svg-arrow-link" title="View Our Work">View
+                        Our Work</a> </p>
+
+            </div>
+
+        </section>
+
+        <!--end our work-->
+
+
+        <section class="wsc-home-budget" aria-labelledby="wsc-website-brief-heading">
+            <div class="container">
+                <div class="heading_main">
+                    <h2 id="wsc-website-brief-heading" class="heading">What Should Your Website Design Quote Include?
+                    </h2>
+                    <p>A useful quotation explains what will be designed, what your team needs to supply and how the
+                        website will be handed over. Compare the scope as carefully as the price.</p>
+                </div>
+                <div class="wsc-home-budget-grid">
+                    <div class="wsc-home-budget-card">
+                        <h3>Pages, Content &amp; Visual Design</h3>
+                        <ul>
+                            <li>List the pages and distinct layouts: home, services, products, about, contact and any
+                                industry-specific pages.</li>
+                            <li>Agree who supplies copy, photography, logos and product information, and whether writing
+                                or image sourcing is included.</li>
+                            <li>Define the design review stages and revision allowance before work begins.</li>
+                        </ul>
+                    </div>
+                    <div class="wsc-home-budget-card">
+                        <h3>Features &amp; Mobile Journeys</h3>
+                        <ul>
+                            <li>Specify enquiry forms, editable content, product filters, booking tools or other
+                                features you actually need.</li>
+                            <li>For ecommerce, discuss the catalogue, payment provider, delivery rules and checkout
+                                requirements.</li>
+                            <li>Include responsive layouts and testing of the actions customers will take on a phone.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wsc-home-budget-card">
+                        <h3>Ownership, Launch &amp; Support</h3>
+                        <ul>
+                            <li>Confirm domain ownership, hosting arrangements, admin access and the agreed source-file
+                                handover.</li>
+                            <li>Separate one-time design costs from hosting, licences and ongoing maintenance charges.
+                            </li>
+                            <li>Agree launch checks, the support period and how future updates or additional work will
+                                be quoted.</li>
+                        </ul>
+                    </div>
+                    <div class="wsc-home-budget-card">
+                        <h3>What Changes the Cost?</h3>
+                        <p>Page count is only part of the estimate. Original layouts, content preparation, catalogue
+                            size, integrations and migration work can change the effort considerably. A focused business
+                            website and a large online store should not be compared as the same project.</p>
+                        <p>Share your existing website, essential pages, required features, target launch date and
+                            budget range. We can then discuss a suitable scope and quotation.</p>
+                    </div>
+                </div>
+                <p class="wsc-home-budget-note">Planning a redesign? Identify the useful pages and customer journeys you
+                    want to retain, along with anything that is difficult to use today. <a
+                        href="contact-us/index.html#project">Send your website brief to our Delhi team &rarr;</a></p>
+            </div>
+        </section>
+
+        <!-- WSC home videos section: start -->
+        <section id="wsc-home-videos" aria-labelledby="wsc-home-videos-heading">
+            <div class="container">
+                <div class="heading_main">
+                    <span class="wsc-hv-eyebrow">Watch &bull; Learn &bull; Explore</span>
+                    <h2 class="heading" id="wsc-home-videos-heading">Website Design &amp; Digital Insights: Featured
+                        Videos</h2>
+                    <p class="wsc-hv-intro">Explore website design advice, digital trends and client experiences from
+                        Web Solution Centre.</p>
+                </div>
+                <div class="wsc-hv-grid">
+                    <article class="wsc-hv-card">
+                        <div class="wsc-hv-media">
+                            <a class="wsc-hv-play" href="https://www.youtube.com/watch?v=i0fGTkR_hIo" target="_blank"
+                                rel="noopener" data-wsc-video="i0fGTkR_hIo"
+                                data-wsc-title="Delhi’s #1 Website Designing Company!   – Best Website Designing Company in Delhi 🚀"
+                                aria-label="Play video: Delhi’s #1 Website Designing Company!   – Best Website Designing Company in Delhi 🚀">
+                                <img src="https://i.ytimg.com/vi/i0fGTkR_hIo/hqdefault.jpg" alt="" width="480"
+                                    height="270" loading="lazy" decoding="async">
+                                <span class="wsc-hv-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div class="wsc-hv-copy">
+                            <span class="wsc-hv-category">Website Design</span>
+                            <h3><a href="https://www.youtube.com/watch?v=i0fGTkR_hIo" target="_blank"
+                                    rel="noopener">Delhi’s #1 Website Designing Company! – Best Website Designing
+                                    Company in Delhi 🚀</a></h3>
+                            <p>An introduction to Web Solution Centre and our website design services in Delhi.</p>
+                        </div>
+                    </article>
+                    <article class="wsc-hv-card">
+                        <div class="wsc-hv-media">
+                            <a class="wsc-hv-play" href="https://www.youtube.com/watch?v=OejFVadintw" target="_blank"
+                                rel="noopener" data-wsc-video="OejFVadintw"
+                                data-wsc-title="ChatGPT Dot: Your Next Alexa? The Always-On AI Agent Explained #chatgpt  #dot"
+                                aria-label="Play video: ChatGPT Dot: Your Next Alexa? The Always-On AI Agent Explained #chatgpt  #dot">
+                                <img src="https://i.ytimg.com/vi/OejFVadintw/hqdefault.jpg" alt="" width="480"
+                                    height="270" loading="lazy" decoding="async">
+                                <span class="wsc-hv-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div class="wsc-hv-copy">
+                            <span class="wsc-hv-category">AI & Digital Experiences</span>
+                            <h3><a href="https://www.youtube.com/watch?v=OejFVadintw" target="_blank"
+                                    rel="noopener">ChatGPT Dot: Your Next Alexa? The Always-On AI Agent Explained
+                                    #chatgpt #dot</a></h3>
+                            <p>Explore an always-on AI agent and its potential role in everyday digital experiences.</p>
+                        </div>
+                    </article>
+                    <article class="wsc-hv-card">
+                        <div class="wsc-hv-media">
+                            <a class="wsc-hv-play" href="https://www.youtube.com/watch?v=LTrnv1tcp8Q" target="_blank"
+                                rel="noopener" data-wsc-video="LTrnv1tcp8Q"
+                                data-wsc-title="Beyond Screens: Exploring AI Sunglasses and Next-Gen Web Experiences with Web Solution Centre"
+                                aria-label="Play video: Beyond Screens: Exploring AI Sunglasses and Next-Gen Web Experiences with Web Solution Centre">
+                                <img src="https://i.ytimg.com/vi/LTrnv1tcp8Q/hqdefault.jpg" alt="" width="480"
+                                    height="270" loading="lazy" decoding="async">
+                                <span class="wsc-hv-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div class="wsc-hv-copy">
+                            <span class="wsc-hv-category">Emerging Technology</span>
+                            <h3><a href="https://www.youtube.com/watch?v=LTrnv1tcp8Q" target="_blank"
+                                    rel="noopener">Beyond Screens: Exploring AI Sunglasses and Next-Gen Web Experiences
+                                    with Web Solution Centre</a></h3>
+                            <p>A look at AI sunglasses and how emerging technology could shape web experiences.</p>
+                        </div>
+                    </article>
+                    <article class="wsc-hv-card">
+                        <div class="wsc-hv-media">
+                            <a class="wsc-hv-play" href="https://www.youtube.com/watch?v=7FExO5TMRDw" target="_blank"
+                                rel="noopener" data-wsc-video="7FExO5TMRDw"
+                                data-wsc-title="Evaluating the Pros and Cons: Custom Website vs. WordPress | Making an Informed Choice"
+                                aria-label="Play video: Evaluating the Pros and Cons: Custom Website vs. WordPress | Making an Informed Choice">
+                                <img src="https://i.ytimg.com/vi/7FExO5TMRDw/hqdefault.jpg" alt="" width="480"
+                                    height="270" loading="lazy" decoding="async">
+                                <span class="wsc-hv-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div class="wsc-hv-copy">
+                            <span class="wsc-hv-category">Website Planning</span>
+                            <h3><a href="https://www.youtube.com/watch?v=7FExO5TMRDw" target="_blank"
+                                    rel="noopener">Evaluating the Pros and Cons: Custom Website vs. WordPress | Making
+                                    an Informed Choice</a></h3>
+                            <p>Compare custom websites and WordPress when choosing an approach for your business.</p>
+                        </div>
+                    </article>
+                    <article class="wsc-hv-card">
+                        <div class="wsc-hv-media">
+                            <a class="wsc-hv-play" href="https://www.youtube.com/watch?v=pgzrxL7g1G4" target="_blank"
+                                rel="noopener" data-wsc-video="pgzrxL7g1G4"
+                                data-wsc-title="Top 5 Reasons to Avoid WordPress in 2024 | #wsc #wordpress #webdevelopment #websolutioncentre"
+                                aria-label="Play video: Top 5 Reasons to Avoid WordPress in 2024 | #wsc #wordpress #webdevelopment #websolutioncentre">
+                                <img src="https://i.ytimg.com/vi/pgzrxL7g1G4/hqdefault.jpg" alt="" width="480"
+                                    height="270" loading="lazy" decoding="async">
+                                <span class="wsc-hv-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div class="wsc-hv-copy">
+                            <span class="wsc-hv-category">Web Development</span>
+                            <h3><a href="https://www.youtube.com/watch?v=pgzrxL7g1G4" target="_blank" rel="noopener">Top
+                                    5 Reasons to Avoid WordPress in 2024 | #wsc #wordpress #webdevelopment
+                                    #websolutioncentre</a></h3>
+                            <p>Considerations to review before choosing WordPress for a website project.</p>
+                        </div>
+                    </article>
+                    <article class="wsc-hv-card">
+                        <div class="wsc-hv-media">
+                            <a class="wsc-hv-play" href="https://www.youtube.com/watch?v=ytKuSfjfO1U" target="_blank"
+                                rel="noopener" data-wsc-video="ytKuSfjfO1U"
+                                data-wsc-title="Social Media Management for Salon Business - Real Client Testimonial  - Web Solution Centre"
+                                aria-label="Play video: Social Media Management for Salon Business - Real Client Testimonial  - Web Solution Centre">
+                                <img src="https://i.ytimg.com/vi/ytKuSfjfO1U/hqdefault.jpg" alt="" width="480"
+                                    height="270" loading="lazy" decoding="async">
+                                <span class="wsc-hv-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div class="wsc-hv-copy">
+                            <span class="wsc-hv-category">Client Testimonial</span>
+                            <h3><a href="https://www.youtube.com/watch?v=ytKuSfjfO1U" target="_blank"
+                                    rel="noopener">Social Media Management for Salon Business - Real Client Testimonial
+                                    - Web Solution Centre</a></h3>
+                            <p>A salon client shares their experience of our social media management services.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="wsc-hv-action"><a href="youtube-videos.php.html" class="btn">View All Videos <img
+                            src="images/menu-right-arrow.png" alt="" width="17" height="12" aria-hidden="true"></a>
+                </div>
+            </div>
+        </section>
+        <!-- WSC home videos section: end -->
+
+        <!--our process-->
+        <section class="process_bg">
+            <div class="container">
+                <div class="heading_main">
+                    <h2 class="heading">Our Process</h2>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="meet">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                <figure><img data-src="images/process-meet.png" src="images/loading.gif"
+                                        alt="Discovery meeting for website design project"
+                                        class="img-fluid lazyload blur-up" width="360" height="326"></figure>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="meet">
+                                    <div class="head">Discovery</div>
+                                    <p>We begin with your audience, offer, competitors and conversion goals. This gives
+                                        the project a clear content, UX and technical direction before design begins.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="plan">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                <figure><img data-src="images/process-plan.png" src="images/loading.gif"
+                                        alt="Website planning and strategy process" class="img-fluid lazyload blur-up"
+                                        width="360" height="326"></figure>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="meet">
+                                    <div class="head">Strategy</div>
+                                    <p>We define the sitemap, user journeys, platform, integrations, milestones and
+                                        responsibilities so the scope and delivery plan are clear.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="design">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                <figure><img data-src="images/process-design.png" src="images/loading.gif"
+                                        alt="Website design and responsive build process"
+                                        class="img-fluid lazyload blur-up" width="360" height="326"></figure>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="meet">
+                                    <div class="head">Design &amp; Build</div>
+                                    <p>Approved visual direction is translated into a responsive, accessible experience
+                                        that reflects your brand and guides visitors towards meaningful action.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="testing">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                <figure><img data-src="images/process-testing.png" src="images/loading.gif"
+                                        alt="Website quality assurance and testing process"
+                                        class="img-fluid lazyload blur-up" width="360" height="326"></figure>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="meet">
+                                    <div class="head">Quality Assurance</div>
+                                    <p>Before launch, we test key journeys, forms, responsive layouts, browser
+                                        compatibility, accessibility basics, metadata, redirects and performance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="launch">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                <figure><img data-src="images/process-launch.png" src="images/loading.gif"
+                                        alt="Website launch and support process" class="img-fluid lazyload blur-up"
+                                        width="360" height="326"></figure>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="meet">
+                                    <div class="head">Launch</div>
+                                    <p>We manage launch checks, analytics, handover details and post-launch support
+                                        backed by more than 18 years of website design experience.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="feedback">
+
+                        <div class="row justify-content-center">
+
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+
+                                <figure><img data-src="images/process-feedback.png" src="images/loading.gif"
+                                        alt="Client feedback and website improvement process"
+                                        class="img-fluid lazyload blur-up" width="360" height="326"></figure>
+
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+
+                                <div class="meet">
+
+                                    <div class="head">Feedback</div>
+
+                                    <p>We review performance and feedback after launch, then prioritize useful
+                                        improvements instead of treating the website as a finished, static asset.</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <ul class="nav-unstyled">
+
+                    <li class="active"><a
+                            href="in/blog/top-10-website-design-companies-in-delhi-ncr-india-2024.html#meet"
+                            title="Meet" data-toggle="tab">Meet</a></li>
+
+                    <li><a href="in/blog/top-10-website-design-companies-in-delhi-ncr-india-2024.html#plan"
+                            data-toggle="tab" title="Plan">Plan</a></li>
+
+                    <li><a href="in/blog/top-10-website-design-companies-in-delhi-ncr-india-2024.html#design"
+                            data-toggle="tab" title="Design and build">Design &amp; Build</a></li>
+
+                    <li><a href="in/blog/top-10-website-design-companies-in-delhi-ncr-india-2024.html#testing"
+                            data-toggle="tab" title="Testing">Testing</a></li>
+
+                    <li><a href="in/blog/top-10-website-design-companies-in-delhi-ncr-india-2024.html#launch"
+                            data-toggle="tab" title="Launch">Launch</a></li>
+
+                    <li><a href="in/blog/top-10-website-design-companies-in-delhi-ncr-india-2024.html#feedback"
+                            data-toggle="tab" title="Feedback">Feedback</a></li>
+
+                </ul>
+
+
+
+            </div>
+
+        </section>
+
+        <!--end our process-->
+
+
+
+        <!--business figure-->
+
+        <section class="business_bg">
+
+            <div class="container">
+
+
+
+                <div class="row">
+
+                    <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 pr-5">
+
+                        <div class="pr-5">
+
+                            <div class="heading">Experience You Can Verify</div>
+
+                            <div class="sub_heading">Highlights Our Commitment</div>
+
+                            <p>Operating from Subhash Nagar, New Delhi since 2008, Web Solution Centre designs
+                                responsive business, corporate and ecommerce websites across varied industries. Our
+                                portfolio, customer feedback and long-standing online profiles give prospective clients
+                                practical evidence to review before starting a project.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 pl-5">
+
+                        <div class="row">
+
+                            <div class="col-xl-6 col-lg-6 col-md-3 col-sm-6">
+
+                                <div class="counter_main">
+
+                                    <div class="counter_box">
+
+                                        <span class="counter" data-from="0" data-to="2" data-speed="1500">2</span>K+
+
+                                    </div>
+
+                                    <p>Projects</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6 col-md-3 col-sm-6">
+
+                                <div class="counter_main">
+
+                                    <div class="counter_box">
+
+                                        <span class="counter" data-from="0" data-to="18" data-speed="1500">18</span>+
+
+                                    </div>
+
+                                    <p>Years of Experience</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6 col-md-3 col-sm-6">
+
+                                <div class="counter_main">
+
+                                    <div class="counter_box">
+
+                                        <span class="counter" data-from="0" data-to="2500"
+                                            data-speed="1500">2500</span>+
+
+                                    </div>
+
+                                    <p>Happy Clients</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6 col-md-3 col-sm-6">
+
+                                <div class="counter_main">
+
+                                    <div class="counter_box">
+
+                                        <span class="counter" data-from="0" data-to="1" data-speed="1500">1</span>K+
+
+                                    </div>
+
+                                    <p>Coffee</p>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+        <!--end business figure-->
+
+
+        <section class="video_bg">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+
+                        <a href="https://www.youtube.com/watch?v=00M4p_oT1no&t=2s" data-fancybox="video-gallery"
+                            title="Video Gallery" data-src="https://www.youtube.com/watch?v=00M4p_oT1no&t=2s"><img
+                                data-src="images/youtube-video.webp" src="images/loading.gif"
+                                alt="Web Solution Centre introduction video thumbnail"
+                                class="img-fluid lazyload blur-up" width="605" height="364"></a>
+
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12" aria-live="polite">
+
+                        <div class="heading_main about-content speakable-section">
+
+                            Web Solution Centre
+
+                            <h2 class="heading">A Leading Website Designing Company In Delhi, NCR</h2>
+
+                            <span>Get your new Website with us <a href="contact-us/index.html" title="Contact Us"><i
+                                        class="fa fa-long-arrow-right"></i></a></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+        <!--end section-->
+
+
+
+        <!--section-->
+
+        <section class="great_bg" aria-live="polite">
+
+            <div class="container">
+
+                <div class="heading_main about-content speakable-section">
+
+                    <h3 class="heading">Why a Great Web Design Matters!</h3>
+
+                    Seven ways thoughtful website design can help your business:
+
+                </div>
+
+
+
+                <div class="owl-carousel text-nav mt-5" data-responsive-lg="3" data-responsive-md="3"
+                    data-responsive-sm="3" data-dots="false" data-autoplay="true" data-nav="false" data-loop="true">
+
+                    <div class="great">
+
+                        <h3>Design <br>Sells!</h3>
+
+                        <div class="water">Design Sells!</div>
+
+                        <div class="great_hover">
+
+                            <div class="head">Design Sells!</div>
+
+                            <p>Your website gives customers a place to understand your offer, review your work and get
+                                in touch. Clear design helps them take that next step.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="great color1">
+
+                        <h3>Creates the First Impression</h3>
+
+                        <div class="water">Creates the First Impression</div>
+
+                        <div class="great_hover">
+
+                            <div class="head">Creates the First Impression</div>
+
+                            <p>Visitors start forming an impression as soon as your page opens. A clear offer, readable
+                                layout and relevant project examples help them understand your business and decide
+                                whether to explore further.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="great">
+
+                        <h3>Responsive <br>Design</h3>
+
+                        <div class="water">Responsive Design</div>
+
+                        <div class="great_hover">
+
+                            <div class="head">Responsive Design</div>
+
+                            <p>To cater to your audience, make sure your website design is responsive and correctly
+                                displays all information on smartphones, tablets, laptops, desktops, and even
+                                televisions. After all, you want your prospects to have a positive experience regardless
+                                of the device they use.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="great color1">
+
+                        <h3>Enhances User Experience</h3>
+
+                        <div class="water">Enhances User Experience</div>
+
+                        <div class="great_hover">
+
+                            <div class="head">Enhances User Experience</div>
+
+                            <p>A good design takes care of your user experience no matter whether they access it from a
+                                mobile phone or a computer.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="great">
+
+                        <h3>Clear Information Structure</h3>
+
+                        <div class="water">Clear Information Structure</div>
+
+                        <div class="great_hover">
+
+                            <div class="head">Clear Information Structure</div>
+
+                            <p>A thoughtful page hierarchy, descriptive navigation and well-grouped content help
+                                visitors understand the website and find the right next step quickly.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="great color1">
+
+                        <h3>Build Brand Image and Trust</h3>
+
+                        <div class="water">Build Brand Image and Trust</div>
+
+                        <div class="great_hover">
+
+                            <div class="head">Build Brand Image and Trust</div>
+
+                            <p>When you are a brand, your website is the first thing people look at to get to know you.
+                                A website that relays your brand colors and ethos will help your customers establish a
+                                connection and trust with you.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="great">
+
+                        <h3>Increase Brand Identity</h3>
+
+                        <div class="water">Increase Brand Identity</div>
+
+                        <div class="great_hover">
+
+                            <div class="head">Increase Brand Identity</div>
+
+                            <p>A great design is eye-catching and shows your customer that you are unique. A website
+                                that is well-designed will show your value proposition in a clear and compelling way and
+                                motivates people to act.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--end section-->
+
+        <!-- Legacy placeholder success stories are not rendered; verified review profiles and real portfolio work appear elsewhere. -->
+
+        <!--secton-->
+        <section class="build_bg" aria-live="polite">
+
+            <div class="container">
+
+                <div class="heading_main about-content speakable-section">
+                    <h2 class="heading">How to Build a Website that Converts</h2>
+                </div>
+
+                <div class="row justify-content-center">
+
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="build">
+                            <img data-src="images/design-sells-icon.png" src="images/loading.gif"
+                                alt="Simplify your Design" width="44" height="44" class="lazyload blur-up">
+                            <div class="title">Simplify your Design</div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="build">
+                            <img data-src="images/cta-icon.png" src="images/loading.gif" alt="Catchy and Clear CTAs"
+                                width="44" height="44" class="lazyload blur-up">
+                            <div class="title">Catchy &amp; Clear CTAs</div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="build">
+                            <img data-src="images/quality-image-icon.png" src="images/loading.gif"
+                                alt="Use Quality Images" width="44" height="44" class="lazyload blur-up">
+                            <div class="title">Use Quality Images</div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+
+                        <div class="build">
+                            <img data-src="images/ab-test-icon.png" src="images/loading.gif" alt="Run A/B Tests"
+                                width="44" height="44" class="lazyload blur-up">
+                            <div class="title">Run A/B Tests</div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="build">
+                            <img data-src="images/chat-now-icon.png" src="images/loading.gif"
+                                alt="Implement Chat button" width="44" height="44" class="lazyload blur-up">
+                            <div class="title">Implement the “Chat now” button</div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="build">
+                            <img data-src="images/security-site-icon.png" src="images/loading.gif" alt="SSL Installed"
+                                width="44" height="44" class="lazyload blur-up">
+                            <div class="title">Have a Security Seal on your Site</div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                        <div class="build">
+                            <img data-src="images/page-speed-icon.png" src="images/loading.gif"
+                                alt="Focus on Loading Speed" width="44" height="44" class="lazyload blur-up">
+                            <div class="title">Focus on Loading Speed</div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </section>
+        <!--end section-->
+
+
+        <!--secton-->
+
+        <section class="choose_bg">
+
+            <div class="container">
+
+                <div class="heading_main why-choose-us">
+
+                    <div class="heading">Why Choose WSC?</div>
+
+                </div>
+
+                <div class="row c_border why-choose-item">
+
+                    <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                        <div style="position:relative;">
+                            <ul>
+                                <li class="active">
+                                    <a href="in/blog/top-10-website-design-companies-in-delhi-ncr-india-2024.html#money"
+                                        title="Money Well Spent" data-toggle="tab">Money Well Spent</a>
+                                </li>
+                                <li>
+                                    <a href="in/blog/top-10-website-design-companies-in-delhi-ncr-india-2024.html#listen"
+                                        title="We Listen" data-toggle="tab">We Listen</a>
+                                </li>
+                                <li>
+                                    <a href="in/blog/top-10-website-design-companies-in-delhi-ncr-india-2024.html#digital"
+                                        title="We Know Digital" data-toggle="tab">We Know
+                                        Digital<!--, and we are passionate about crafting solutions that stand the test of time.--></a>
+                                </li>
+                                <li>
+                                    <a href="in/blog/top-10-website-design-companies-in-delhi-ncr-india-2024.html#results"
+                                        title="We Focus On Results" data-toggle="tab">We Focus On Results</a>
+                                </li>
+                                <li>
+                                    <a href="in/blog/top-10-website-design-companies-in-delhi-ncr-india-2024.html#all"
+                                        data-toggle="tab" title="All In One">All In One</a>
+                                </li>
+                                <li>
+                                    <a href="in/blog/top-10-website-design-companies-in-delhi-ncr-india-2024.html#offer"
+                                        data-toggle="tab" title="We Offer Ongoing Assistance">We Offer Ongoing
+                                        Assistance</a>
+                                </li>
+                            </ul>
+                            <div class="question">?</div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+
+                        <div class="tab-content">
+
+                            <div class="tab-pane fade in active" id="money">
+
+                                <div class="choose_text benefit-point">
+
+                                    We help you focus the budget on the pages and features your customers need. A
+                                    clearly agreed scope makes it easier to assess the cost and plan later additions.
+
+                                    <img src="images/money-spent.png" alt="Money Well Spent" width="230" height="230"
+                                        class="lazyload blur-up">
+                                    <div class="water">Money Well Spent</div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="listen">
+
+                                <div class="choose_text benefit-point">
+                                    We start by listening to your ideas and the questions your customers ask. Design
+                                    reviews give you a chance to check the direction, raise concerns and agree changes
+                                    before the next stage begins.
+                                    <img data-src="images/listen.png" src="images/loading.gif" alt="We Listen"
+                                        width="230" height="230" class="lazyload blur-up">
+                                    <div class="water">We Listen</div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="digital">
+                                <div class="choose_text benefit-point">
+                                    We have been designing business websites since 2008. Our team combines visual
+                                    thinking with practical interface decisions, creating custom website designs that
+                                    reflect the brand and make the offer easier for customers to understand.
+                                    <img data-src="images/know-digital.png" src="images/loading.gif"
+                                        alt="We Know Digital" width="230" height="230" class="lazyload blur-up">
+                                    <div class="water">We Know Digital</div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="results">
+                                <div class="choose_text benefit-point">
+                                    We understand that an attractive website is nothing without tangible outcomes. As a
+                                    professional website design company for more than a decade, for us, it’s all about
+                                    what adds value for you and your business. Above all, we want our website to work
+                                    for you.
+                                    <img data-src="images/focus-results.png" src="images/loading.gif"
+                                        alt="We Focus On Results" width="230" height="230" class="lazyload blur-up">
+                                    <div class="water">We Focus On Results</div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="all">
+                                <div class="choose_text benefit-point">
+                                    A complete website design engagement can cover discovery, content structure,
+                                    interface design, responsive layouts, visual assets, quality checks and launch
+                                    support. Keeping these connected reduces gaps between the approved design and the
+                                    experience customers actually use.
+                                    <img data-src="images/all-in-one.png" src="images/loading.gif" alt="All In One"
+                                        width="230" height="230" class="lazyload blur-up">
+                                    <div class="water">All In One</div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="offer">
+                                <div class="choose_text benefit-point">
+                                    A website needs attention after launch, too. Discuss content updates, maintenance
+                                    and technical support with our team before the project begins, so the
+                                    responsibilities and any ongoing charges are clear. As your business changes, we can
+                                    help you plan the next improvements around what your customers need.
+                                    <img data-src="images/assistance.png" src="images/loading.gif"
+                                        alt="Ongoing Assistance" width="230" height="230" class="lazyload blur-up">
+                                    <div class="water">We Offer Ongoing Assistance</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--end section -->
+
+
+
+        <!--why us-->
+
+        <section class="faq_bg" aria-live="polite">
+
+            <div class="container about-content speakable-section">
+
+                <div class="heading_main">
+
+                    <h2 class="heading">Website Design Questions, Answered</h2>
+
+                    Practical answers about cost, timelines, mobile design and working with our Delhi team.
+
+                </div>
+
+                <div class="faq_main">
+
+                    <div class="faq_num">
+
+                        <div class="num">01</div>
+
+                        <h4>How much does professional website design cost in Delhi?</h4>
+
+                    </div>
+
+                    <div class="faq_text">
+
+                        <span>The cost depends on the number of pages, content readiness, visual complexity, required
+                            interactions and business goals. We first understand the brief, then provide a defined scope
+                            and transparent quotation instead of forcing every project into one package.</span>
+
+                    </div>
+
+                </div>
+
+                <div class="faq_main">
+
+                    <div class="faq_num">
+
+                        <div class="num">02</div>
+
+                        <h4>What types of businesses can you help?</h4>
+
+                    </div>
+
+                    <div class="faq_text">
+
+                        <span>We design for startups, professional firms, manufacturers, retailers, education brands,
+                            hospitality businesses and established B2B and B2C companies. The visual direction and
+                            content structure are adapted to the audience rather than reused across industries.</span>
+
+                    </div>
+
+                </div>
+
+                <div class="faq_main">
+
+                    <div class="faq_num">
+
+                        <div class="num">03</div>
+
+                        <h4>How long does a business website design project take?</h4>
+
+                    </div>
+
+                    <div class="faq_text">
+
+                        <span>A focused business website commonly takes 4 to 12 weeks. The schedule depends on page
+                            count, content availability, feedback cycles, integrations and final testing. We confirm
+                            milestones at the start so both teams know what is needed and when.</span>
+                    </div>
+
+                </div>
+
+                <div class="faq_main">
+
+                    <div class="faq_num">
+
+                        <div class="num">04</div>
+
+                        <h4>Can you provide website maintenance services?</h4>
+
+                    </div>
+
+                    <div class="faq_text">
+
+                        <span>Yes. We provide post-launch support, content updates, performance checks, backups and
+                            ongoing improvements. The support scope is agreed before launch so ownership and response
+                            expectations remain clear.</span>
+
+                    </div>
+
+                </div>
+
+                <div class="faq_main">
+
+                    <div class="faq_num">
+
+                        <div class="num">05</div>
+
+                        <h4>Is my website going to be optimized for mobile devices?</h4>
+
+                    </div>
+
+                    <div class="faq_text">
+
+                        <span>Yes. We design responsive layouts and test key journeys across common phone, tablet,
+                            laptop and desktop widths. Navigation, text, forms and tap targets are reviewed for real
+                            small-screen use.</span>
+
+                    </div>
+
+                </div>
+
+                <div class="faq_main">
+
+                    <div class="faq_num">
+
+                        <div class="num">06</div>
+
+                        <h4>Can you redesign my existing business website?</h4>
+
+                    </div>
+
+                    <div class="faq_text">
+
+                        <span>Yes. We can retain useful content and familiar customer paths while improving brand
+                            presentation, information hierarchy, navigation, mobile usability and calls to action. The
+                            redesign starts with an audit of what should stay, change or be removed.</span>
+
+                    </div>
+
+                </div>
+
+                <div class="faq_main">
+                    <div class="faq_num">
+                        <div class="num">07</div>
+                        <h4>Will I be able to update the website myself?</h4>
+                    </div>
+                    <div class="faq_text"><span>If you need to edit pages, products or articles, include that in your
+                            brief. We can plan an appropriate content management system and agree which areas your team
+                            can update. Admin access, training and any ongoing licence costs should be specified in the
+                            project scope.</span></div>
+                </div>
+                <div class="faq_main">
+                    <div class="faq_num">
+                        <div class="num">08</div>
+                        <h4>Can we meet your website design team in Delhi?</h4>
+                    </div>
+                    <div class="faq_text"><span>Our office is at 2/345 Subhash Nagar, New Delhi 110027. Call
+                            +91-9891846187 or use our contact page to arrange a discussion before visiting. You can also
+                            send your brief online if you are outside Delhi.</span></div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--end why us-->
+
+
+
+        <!--secton-->
+
+        <section class="trivia_bg">
+
+            <div class="container">
+
+                <div class="heading_main">
+
+                    <div class="heading">Trivia</div>
+
+                </div>
+
+                <div class="owl-carousel" data-responsive-lg="1" data-responsive-md="1" data-responsive-sm="1"
+                    data-dots="true" data-autoplay="true" data-loop="true">
+
+                    <div class="t_head">A clear first screen should explain <strong>who you help, what you offer and
+                            what to do next.</strong></div>
+
+                    <div class="t_head">Good responsive design changes the hierarchy for smaller screens; it does not
+                        simply <strong>shrink the desktop layout.</strong></div>
+
+                    <div class="t_head">The most persuasive design choices usually begin with <strong>real customer
+                            questions.</strong></div>
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--end section-->
+
+
+
+        <!--blog-->
+
+        <section class="blog_bg">
+
+            <div class="container">
+
+                <div class="heading_main">
+
+                    <div class="heading">Our Latest Blog</div>
+
+                </div>
+
+                <div id="blog-content" class="row"></div>
+
+                <div class="text-center mt-5">
+
+                    <a href="in/index.html" class="btn">View Blog</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--end blog-->
+
+
+        <!--section-->
+
+        <section class="intro_bg faq-item" aria-labelledby="choose-wsc-heading">
+            <div class="container">
+                <div class="heading_main">
+                    <h2 id="choose-wsc-heading" class="heading hero-content">How to Choose the Right Website Design
+                        Partner in Delhi</h2>
+                    <p>Five practical checks help separate a capable long-term partner from a template seller.</p>
+                </div>
+
+                <div class="faq_main">
+                    <div class="faq_num faq-question">
+                        <div class="num">I</div>
+                        <div class="name">Strategy Before Screens</div>
+                    </div>
+                    <div class="faq_text faq-answer">
+                        <p>A credible agency should ask about your audience, positioning, competitors and conversion
+                            goals before discussing colours or layouts. Strategy gives the website a commercial purpose.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq_main">
+                    <div class="faq_num faq-question">
+                        <div class="num">II</div>
+                        <div class="name">Portfolio and Proof</div>
+                    </div>
+                    <div class="faq_text faq-answer">
+                        <p>Review relevant work, live websites, independent feedback and the clarity of the agency's own
+                            digital presence. A strong <a href="portfolio/index.html"
+                                title="Web Solution Centre portfolio">portfolio</a> should demonstrate both design range
+                            and practical execution.</p>
+                    </div>
+                </div>
+                <div class="faq_main">
+                    <div class="faq_num faq-question">
+                        <div class="num">III</div>
+                        <div class="name">Responsive Quality and Performance</div>
+                    </div>
+                    <div class="faq_text faq-answer">
+                        <p>Ask how mobile UX, accessibility, loading performance, semantic page structure and browser
+                            testing will be handled. These foundations should be considered during design, not treated
+                            as emergency repairs after launch.</p>
+                    </div>
+                </div>
+                <div class="faq_main">
+                    <div class="faq_num faq-question">
+                        <div class="num">IV</div>
+                        <div class="name">Clear Scope and Communication</div>
+                    </div>
+                    <div class="faq_text faq-answer">
+                        <p>Expect a written scope, milestones, responsibilities and review process. Clear communication
+                            protects the budget, keeps approvals moving and reduces avoidable revisions.</p>
+                    </div>
+                </div>
+                <div class="faq_main">
+                    <div class="faq_num faq-question">
+                        <div class="num">V</div>
+                        <div class="name">Support After Launch</div>
+                    </div>
+                    <div class="faq_text faq-answer">
+                        <p>Clarify maintenance, security, backups, analytics and future optimization before signing. A
+                            useful website keeps improving as customer behaviour, technology and search requirements
+                            change.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end section-->
+
+        <!--section-->
+        <section class="harness_bg">
+            <div class="container">
+                <div class="heading_main">
+                    <h2 class="heading">What Makes Business Website Design <br>Work in 2026</h2>
+                    <p>Trends change quickly. The strongest business websites still earn attention through clarity,
+                        credibility, thoughtful interaction and a design system that works consistently across screens.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="harness">
+                            <div class="harness_head">
+                                <div class="ha_icon"><img src="images/research-icon.png" alt="Website content discovery"
+                                        class="img-fluid" width="26" height="20"></div>
+                                <h3>Clarity Before Decoration</h3>
+                            </div>
+                            <p>Visitors should understand the offer without decoding slogans. We organise messages,
+                                proof and calls to action before polishing the visual layer.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="harness">
+                            <div class="harness_head">
+                                <div class="ha_icon"><img src="images/optimization-icon.png"
+                                        alt="Consistent website design system" class="img-fluid" width="26" height="20">
+                                </div>
+                                <h3>A Consistent Design System</h3>
+                            </div>
+                            <p>Reusable typography, spacing, colour and component rules keep every page recognisable
+                                while making future additions easier to manage.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="harness">
+                            <div class="harness_head">
+                                <div class="ha_icon"><img src="images/analytics-seo-icon.png"
+                                        alt="Conversion focused website journeys" class="img-fluid" width="26"
+                                        height="20"></div>
+                                <h3>Purposeful User Journeys</h3>
+                            </div>
+                            <p>Navigation and page sequences should help different visitors find relevant proof, compare
+                                options and reach the right next step with less friction.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="harness">
+                            <div class="harness_head">
+                                <div class="ha_icon"><img src="images/user-experiences-icon.png"
+                                        alt="Responsive and accessible website experience" class="img-fluid" width="26"
+                                        height="20"></div>
+                                <h3>Responsive, Inclusive Experiences</h3>
+                            </div>
+                            <p>Readable type, sufficient contrast, keyboard-friendly interactions and deliberate mobile
+                                layouts make the experience useful to more people.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="contact-us/index.html#project" class="btn">Discuss Your Website Design <img
+                            src="images/menu-right-arrow.png" alt="" width="17" height="12" aria-hidden="true"></a>
+                </div>
+            </div>
+        </section>
+        <!--end section-->
+
+        <!--section-->
+        <section class="searched_terms hero">
+            <div class="container hero-content speakable-section">
+                <div class="heading_main">
+                    <h2 class="heading speakable-heading">Website Design Expertise Across Delhi NCR</h2>
+                    <p>Explore our core website design capabilities, selected work and local service pages.</p>
+                </div>
+
+                <ol>
+                    <li><a href="web-designing.html"
+                            title="Custom website designing services in Delhi"><span>01</span>Custom Website Design in
+                            Delhi</a></li>
+                    <li><a href="portfolio/index.html" title="Website design portfolio"><span>02</span>Website Design
+                            Portfolio</a></li>
+                    <li><a href="e-commerce-website-designing/index.html"
+                            title="Ecommerce website design in Delhi"><span>03</span>Ecommerce Website Design in
+                            Delhi</a></li>
+                    <li><a href="contact-us/index.html#project"
+                            title="Business website redesign in Delhi"><span>04</span>Business Website Redesign</a></li>
+                    <li><a href="website-designing-company-west-delhi.html"
+                            title="Website design company in West Delhi"><span>05</span>Website Designing Company in
+                            West Delhi</a></li>
+                    <li><a href="website-designing-company-south-delhi.html"
+                            title="Website design company in South Delhi"><span>06</span>Website Designing Company in
+                            South Delhi</a></li>
+                    <li><a href="website-designing-company-north-delhi.html"
+                            title="Website design company in North Delhi"><span>07</span>Website Designing Company in
+                            North Delhi</a></li>
+                    <li><a href="website-designing-company-east-delhi.html"
+                            title="Website design company in East Delhi"><span>08</span>Website Designing Company in
+                            East Delhi</a></li>
+                    <li><a href="about-us/index.html" title="About Web Solution Centre"><span>09</span>About Our Delhi
+                            Design Team</a></li>
+                    <li><a href="contact-us/index.html#project"
+                            title="Request a website design quotation"><span>10</span>Request a Website Design Quote</a>
+                    </li>
+
+
+                </ol>
+
+            </div>
+        </section>
+
+
+        <!--footer-->
+    </main>
+    <div id="footer-container"></div>
+    
+
+    <!--//footer-->
+
+
+
+    <div class="whatsapp"><a
+            href="https://api.whatsapp.com/send?phone=919891846187&amp;text=Hi%20Web%20Solution%0ACentre%20I%20am%20looking%20for%20web%20design%20services"
+            target="_blank" rel="noopener" aria-label="whatsapp"><i class="fa fa-whatsapp"></i></a></div>
+
+
+
+    <!--js start-->
+
+    <script src="js/compressed.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/navscript.js" defer></script>
+    <script src="js/swiper.jquery.min.js" type="text/javascript" defer></script>
+    <script src="js/home.js" defer></script>
+    <script src="js/lazysizes.min.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <script>
+        (function () {
+            if (!window.matchMedia || !window.matchMedia('(pointer: fine)').matches) return;
+            var loadCursor = function () {
+                var script = document.createElement('script');
+                script.src = 'js/cursor.js';
+                script.defer = true;
+                document.body.appendChild(script);
+            };
+            var scheduleCursor = function () {
+                if ('requestIdleCallback' in window) window.requestIdleCallback(loadCursor, { timeout: 2500 });
+                else window.setTimeout(loadCursor, 800);
+            };
+            if (document.readyState === 'complete') scheduleCursor();
+            else window.addEventListener('load', scheduleCursor, { once: true });
+        }());
+    </script>
+
+    <script>
+        (function () {
+            var blogContainer = document.getElementById('blog-content');
+            if (!blogContainer) {
+                return;
+            }
+
+            function textValue(value) {
+                return value == null ? '' : String(value);
+            }
+
+            function safeUrl(value, fallback) {
+                try {
+                    var url = new URL(textValue(value), window.location.origin);
+                    return (url.protocol === 'http:' || url.protocol === 'https:') ? url.href : fallback;
+                } catch (error) {
+                    return fallback;
+                }
+            }
+
+            fetch('https://www.websolutioncentre.com/in/api/latest-blog', {
+                headers: { 'Accept': 'application/json' }
+            })
+                .then(function (response) {
+                    if (!response.ok) {
+                        throw new Error('Latest blog API status: ' + response.status);
+                    }
+                    return response.json();
+                })
+                .then(function (data) {
+                    if (!Array.isArray(data)) {
+                        return;
+                    }
+
+                    var fragment = document.createDocumentFragment();
+
+                    data.slice(0, 4).forEach(function (blog) {
+                        var title = textValue(blog.title).trim() || 'Web Solution Centre blog article';
+                        var blogUrl = safeUrl(blog.url, 'https://www.websolutioncentre.com/in/');
+                        var imageUrl = safeUrl(blog.image_thumbnail, 'https://www.websolutioncentre.com/images/og-image.jpg');
+                        var dateText = textValue(blog.created_at_disp).trim();
+
+                        var column = document.createElement('div');
+                        column.className = 'col-xl-3 col-lg-3 col-md-6 col-sm-12';
+
+                        var blogCard = document.createElement('div');
+                        blogCard.className = 'blog';
+
+                        var figure = document.createElement('figure');
+                        var image = document.createElement('img');
+                        image.src = imageUrl;
+                        image.alt = title + ' - Web Solution Centre blog';
+                        image.className = 'img-fluid lazyload blur-up';
+                        image.width = 288;
+                        image.height = 230;
+                        image.loading = 'lazy';
+                        figure.appendChild(image);
+
+                        var blogText = document.createElement('div');
+                        blogText.className = 'blog_text';
+
+                        var date = document.createElement('div');
+                        date.className = 'date';
+                        date.textContent = dateText;
+
+                        var titleLink = document.createElement('a');
+                        titleLink.href = blogUrl;
+                        titleLink.target = '_blank';
+                        titleLink.rel = 'noopener';
+
+                        var blogTitle = document.createElement('div');
+                        blogTitle.className = 'blog_title';
+                        blogTitle.textContent = title;
+                        titleLink.appendChild(blogTitle);
+
+                        var readMore = document.createElement('div');
+                        readMore.className = 'read_more';
+
+                        var readMoreLink = document.createElement('a');
+                        readMoreLink.href = blogUrl;
+                        readMoreLink.target = '_blank';
+                        readMoreLink.rel = 'noopener';
+                        readMoreLink.setAttribute('aria-label', 'Read blog: ' + title);
+                        readMoreLink.textContent = '+';
+                        readMore.appendChild(readMoreLink);
+
+                        blogText.appendChild(date);
+                        blogText.appendChild(titleLink);
+                        blogText.appendChild(readMore);
+                        blogCard.appendChild(figure);
+                        blogCard.appendChild(blogText);
+                        column.appendChild(blogCard);
+                        fragment.appendChild(column);
+                    });
+
+                    blogContainer.replaceChildren(fragment);
+                })
+                .catch(function () {
+                    blogContainer.textContent = '';
+                });
+        }());
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-79FK86GZJC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-79FK86GZJC');
+    </script>
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "i0bpl03d4k");
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '729270901541165');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" alt=""
+            src="https://www.facebook.com/tr?id=729270901541165&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const videoWrappers = document.querySelectorAll('.js-video-loader');
+
+            videoWrappers.forEach(wrapper => {
+                wrapper.addEventListener('click', function () {
+                    const videoId = this.getAttribute('data-video-id');
+                    // Prevent error if ID is missing or is the placeholder text
+                    if (!videoId || videoId.includes('VIDEO_ID')) {
+                        console.warn('No valid video ID found. Please update data-video-id in HTML.');
+                        return;
+                    }
+
+                    // Create the iframe
+                    const iframe = document.createElement('iframe');
+                    iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`);
+                    iframe.setAttribute('frameborder', '0');
+                    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+                    iframe.setAttribute('allowfullscreen', 'true');
+                    iframe.classList.add('youtube-iframe');
+
+                    // Clear the placeholder content and append iframe
+                    this.innerHTML = '';
+                    this.appendChild(iframe);
+                });
+            });
+        });
+    </script>
+
+
+
+    <!-- WSC home videos script: start -->
+    <script>
+        (function () {
+            var section = document.getElementById('wsc-home-videos');
+            if (!section) return;
+            section.addEventListener('click', function (event) {
+                var link = event.target.closest('a[data-wsc-video]');
+                if (!link || !section.contains(link) || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+                var id = link.getAttribute('data-wsc-video');
+                if (!/^[A-Za-z0-9_-]{11}$/.test(id)) return;
+                event.preventDefault();
+                var player = document.createElement('iframe');
+                player.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+                player.title = link.getAttribute('data-wsc-title');
+                player.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+                player.allowFullscreen = true;
+                player.referrerPolicy = 'strict-origin-when-cross-origin';
+                player.tabIndex = 0;
+                link.replaceWith(player);
+                player.focus();
+            });
+        })();
+    </script>
+    <!-- WSC home videos script: end -->
+     <script src="commonnscript.js"></script>
+</body>
+
+</html>

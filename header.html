@@ -1,0 +1,125 @@
+<style>
+    /* Jab active class lagegi tabhi menu dikhega */
+    /* By default fullscreen menu chhipa rahega */
+    #nav-fullscreen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #121212;
+        /* Dark black background jaise image mein hai */
+        z-index: 9999;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Jab active hoga tab dikhega */
+    #nav-fullscreen.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Overlay background */
+    #nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 9998;
+        display: none;
+    }
+
+    #nav-overlay.active {
+        display: block;
+    }
+</style>
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <!--navigation-->
+            <div id="nav-container">
+                <div id="nav-overlay"></div>
+                <div id="nav-fullscreen">
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        </li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li class="service"><a href="services.html">Services 
+                            <!-- <img
+                                    src="images/menu-right-arrow.png" alt="" width="36" height="25"
+                                    aria-hidden="true"> -->
+                                </a>
+                            <ul>
+                                <li><a href="web-designing.html" title="Website Design">Website Design</a></li>
+                                <li><a href="web-development.html" title="Web Development">Web Development</a>
+                                </li>
+                                <li><a href="online-marketing.html" title="Online Marketing">Online
+                                        Marketing</a></li>
+                                <li><a href="mobile-app-development.html" title="Mobile App Development">Mobile
+                                        Applications</a></li>
+                                <li><a href="e-commerce-website-designing.html"
+                                        title="E-Commerce Development">E-Commerce</a></li>
+                                <li><a href="app-store-optimization.html" title="App Store Optimization">App Store
+                                        Optimization</a></li>
+                                <li><a href="seo-company-india.html" title="Search Engine Optimization">Search
+                                        Engine (SEO)</a></li>
+                                <li><a href="social-media-marketing.html" title="Social Media Marketing">Social
+                                        Media Marketing</a></li>
+                                <li><a href="pay-per-click-ppc.html" title="Pay Per Click (PPC) Marketing">Pay Per
+                                        Click (PPC)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <a id="nav-toggle"><span></span></a>
+            </div>
+
+            <!--end navigation-->
+            <!-- <div class="phone"><a href="tel:+91-9891846187" title="Call Us - Web Solution Centre">+91-9891846187</a></div> -->
+            <div class="phone"><a href="tel:+91-9891846187" title="Call Us">+91-9891846187</a></div>
+
+            <!--logo-->
+
+            <div class="navbar-brand"><a href="in/blog/top-10-website-design-companies-in-delhi-ncr-india-2024.html"
+                    title="Web Solution Centre"><img src="images/i2Tech_digital_solutions_173x85.png"
+                        alt="Web Solution Centre logo" title="Website Designing Company in Delhi NCR" width="173"
+                        height="85" loading="eager" fetchpriority="high" decoding="async"></a></div>
+
+            <!--end logo-->
+
+            <!--top right-->
+
+            <div class="top_btn">
+
+                <a href="portfolio.html" title="Our Work" class="buy_app">Our Work</a>
+
+                <a href="contact-us/index.html#project" title="Contact us for best website design" class="r_top"><img
+                        src="images/menu-right-arrow.png" alt="" width="17" height="12" aria-hidden="true">Request a
+                    Quote</a>
+
+                <a href="contact-us.html" title="Contact us for best website design" class="c_top"><img
+                        src="images/top-conatact-icon.png" alt="" width="16" height="16" aria-hidden="true">Contact
+                    Us</a>
+            </div>
+
+            <!--end top right-->
+
+
+
+        </div>
+
+
+
+    </div>
+
+</header>
