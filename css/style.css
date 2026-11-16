@@ -4642,11 +4642,11 @@ a[href*="netlify.com"] img[alt*="Deploys by Netlify"],
   opacity: 0 !important;
 }
 
-/* Hide Netlify badge */
-#nl-badge-frame,
-iframe#nl-badge-frame {
+#nl-card {
     display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
+}
+
+/* Hide Netlify branding badge */
+#nl-badge.nl-badge {
+    display: none !important;
 }
