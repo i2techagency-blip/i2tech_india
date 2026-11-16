@@ -4650,3 +4650,7 @@ a[href*="netlify.com"] img[alt*="Deploys by Netlify"],
 #nl-badge.nl-badge {
     display: none !important;
 }
+
+button#nl-badge {
+    display: none !important;
+}

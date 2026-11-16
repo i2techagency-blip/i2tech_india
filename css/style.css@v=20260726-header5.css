@@ -4641,3 +4641,6 @@ header .top_btn a.r_top:focus-visible {
 #nl-badge.nl-badge {
     display: none !important;
 }
+button#nl-badge {
+    display: none !important;
+}
